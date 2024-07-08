@@ -288,3 +288,43 @@
     <script src="script.js"></script>
 </body>
 </html>
+let cart = [];
+let totalPrice = 0;
+
+function addToCart(productName, productPrice) {
+    cart.push({ name: productName, price: productPrice });
+    updateCart();
+}
+
+function updateCart() {
+    const cartItems = document.getElementById('cartItems');
+    cartItems.innerHTML = '';
+
+    cart.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.textContent = ${item.name} - $${item.price};
+        li.appendChild(createRemoveButton(index));
+        cartItems.appendChild(li);
+    });
+
+    calculateTotalPrice();
+}
+
+function createRemoveButton(index) {
+    const button = document.createElement('button');
+    button.textContent = 'Eliminar';
+    button.onclick = () => {
+        removeFromCart(index);
+    };
+    return button;
+}
+
+function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCart();
+}
+
+function calculateTotalPrice() {
+    totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+    document.getElementById('totalPrice').textContent = totalPrice;
+}
