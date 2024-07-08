@@ -252,3 +252,39 @@
     </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        /* Estilos básicos para el ejemplo */
+        .product {
+            margin: 20px;
+        }
+        .cart {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Productos</h1>
+    <div class="product">
+        <h2>Producto 1</h2>
+        <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
+    </div>
+    <div class="product">
+        <h2>Producto 2</h2>
+        <button onclick="addToCart('Producto 2', 15)">Agregar al Carrito</button>
+    </div>
+
+    <h1>Carrito de Compras</h1>
+    <div class="cart">
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="totalPrice">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
