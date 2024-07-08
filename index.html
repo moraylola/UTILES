@@ -273,26 +273,35 @@
     <div class="product">
         <h2>Producto 1</h2>
         <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
+        <input type="number" id="quantity1" placeholder="Cantidad" min="1" value="1">
     </div>
     <div class="product">
         <h2>Producto 2</h2>
         <button onclick="addToCart('Producto 2', 15)">Agregar al Carrito</button>
+        <input type="number" id="quantity2" placeholder="Cantidad" min="1" value="1">
     </div>
 
     <h1>Carrito de Compras</h1>
-    <div class="cart">
-        <ul id="cartItems"></ul>
-        <p>Total: $<span id="totalPrice">0</span></p>
-    </div>
+    <ul id="cartItems"></ul>
+    <p>Total: $<span id="totalPrice">0</span></p>
+    <button onclick="emptyCart()">Vaciar Carrito</button>
+    <button onclick="buy()">Comprar</button>
 
     <script src="script.js"></script>
 </body>
 </html>
 let cart = [];
-let totalPrice = 0;
 
 function addToCart(productName, productPrice) {
-    cart.push({ name: productName, price: productPrice });
+    const quantityInput = document.querySelector(#quantity${productName.split(' ')[1]});
+    const quantity = parseInt(quantityInput.value);
+
+    const product = cart.find(item => item.name === productName);
+    if (product) {
+        product.quantity += quantity;
+    } else {
+        cart.push({ name: productName, price: productPrice, quantity: quantity });
+    }
     updateCart();
 }
 
@@ -302,7 +311,7 @@ function updateCart() {
 
     cart.forEach((item, index) => {
         const li = document.createElement('li');
-        li.textContent = ${item.name} - $${item.price};
+        li.textContent = ${item.name} - $${item.price} x ${item.quantity};
         li.appendChild(createRemoveButton(index));
         cartItems.appendChild(li);
     });
@@ -325,6 +334,20 @@ function removeFromCart(index) {
 }
 
 function calculateTotalPrice() {
-    totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+    const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
     document.getElementById('totalPrice').textContent = totalPrice;
+}
+
+function emptyCart() {
+    cart = [];
+    updateCart();
+}
+
+function buy() {
+    if (cart.length === 0) {
+        alert("El carrito está vacío. Agrega productos antes de comprar.");
+    } else {
+        alert(Compra realizada. Total a pagar: $${document.getElementById('totalPrice').textContent});
+        emptyCart();
+    }
 }
