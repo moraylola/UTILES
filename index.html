@@ -3,61 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Tienda de Útiles Escolares</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        main {
-            padding: 1em;
-        }
-
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Tienda de Útiles Escolares</h1>
-    </header>
-    <main>
-        <section id="about">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos una tienda dedicada a ofrecer los mejores útiles escolares para todos los niveles educativos.</p>
-            <img src="empresa.jpg" alt="Nuestra Empresa">
-        </section>
-        <section id="features">
-            <h2>Características</h2>
-            <ul>
-                <li>Amplia variedad de productos</li>
-                <li>Precios competitivos</li>
-                <li>Atención personalizada</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Contacto: info@tiendaescolares.com</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - Tienda de Útiles Escolares</title>
+    <title>Tienda de Útiles Escolares</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -98,162 +44,6 @@
             padding: 0.5em 1em;
             cursor: pointer;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Nuestros Productos</h1>
-    </header>
-    <main>
-        <section id="papeleria">
-            <h2>Papelería</h2>
-            <article class="producto">
-                <img src="cuaderno.png" alt="Cuaderno">
-                <h3>Cuaderno</h3>
-                <p>Descripción del cuaderno</p>
-                <p>Precio: $2.00</p>
-                <button onclick="addToCart({name: 'Cuaderno', price: 2.00})">Comprar</button>
-            </article>
-            <section id="papeleria">
-            <h2>Papelería</h2>
-            <article class="producto">
-                <img src="cuaderno.jpg" alt="Cuaderno">
-                <h3>Cuaderno</h3>
-                <p>Descripción del cuaderno</p>
-                <p>Precio: $2.00</p>
-                <button onclick="addToCart({name: 'Cuaderno', price: 2.00})">Comprar</button>
-            </article>
-                 <section id="papeleria">
-            <h2>Papelería</h2>
-            <article class="producto">
-                <img src="cuaderno.jpg" alt="Cuaderno">
-                <h3>Cuaderno</h3>
-                <p>Descripción del cuaderno</p>
-                <p>Precio: $2.00</p>
-                <button onclick="addToCart({name: 'Cuaderno', price: 2.00})">Comprar</button>
-            </article>
-            <!-- Repetir para los otros productos -->
-        </section>
-        <section id="mochilas">
-            <h2>Mochilas</h2>
-            <article class="producto">
-                <img src="mochila.g" alt="Mochila escolar">
-                <h3>Mochila escolar</h3>
-                <p>Descripción de la mochila</p>
-                <p>Precio: $15.00</p>
-                <button onclick="addToCart({name: 'Mochila escolar', price: 15.00})">Comprar</button>
-            </article>
-            <section id="mochilas">
-            <h2>Mochilas</h2>
-            <article class="producto">
-                <img src="mochila.jpg" alt="Mochila escolar">
-                <h3>Mochila escolar</h3>
-                <p>Descripción de la mochila</p>
-                <p>Precio: $15.00</p>
-                <button onclick="addToCart({name: 'Mochila escolar', price: 15.00})">Comprar</button>
-            </article>
-                <section id="mochilas">
-            <h2>Mochilas</h2>
-            <article class="producto">
-                <img src="mochila.jpg" alt="Mochila escolar">
-                <h3>Mochila escolar</h3>
-                <p>Descripción de la mochila</p>
-                <p>Precio: $15.00</p>
-                <button onclick="addToCart({name: 'Mochila escolar', price: 15.00})">Comprar</button>
-            </article>
-            <!-- Repetir para los otros productos -->
-        </section>
-        <section id="tecnologia">
-            <h2>Tecnología</h2>
-            <article class="producto">
-                <img src="calculadora.png" alt="Calculadora">
-                <h3>Calculadora</h3>
-                <p>Descripción de la calculadora</p>
-                <p>Precio: $10.00</p>
-                <button onclick="addToCart({name: 'Calculadora', price: 10.00})">Comprar</button>
-            </article>
-               <article class="producto">
-                <img src="calculadora.png" alt="Calculadora">
-                <h3>Calculadora</h3>
-                <p>Descripción de la calculadora</p>
-                <p>Precio: $10.00</p>
-                <button onclick="addToCart({name: 'Calculadora', price: 10.00})">Comprar</button>
-            </article>
-             </article>
-               <article class="producto">
-                <img src="calculadora.png" alt="Calculadora">
-                <h3>Calculadora</h3>
-                <p>Descripción de la calculadora</p>
-                <p>Precio: $10.00</p>
-                <button onclick="addToCart({name: 'Calculadora', price: 10.00})">Comprar</button>
-            </article>
-            <!-- Repetir para los otros productos -->
-        </section>
-    </main>
-    <footer>
-        <p>Contacto: info@tiendaescolares.com</p>
-    </footer>
-    <script>
-        let cart = [];
-
-        function addToCart(product) {
-            cart.push(product);
-            console.log(${product.name} ha sido agregado al carrito.);
-        }
-
-        function addMultipleToCart(products) {
-            cart.push(...products);
-            console.log(${products.length} productos han sido agregados al carrito.);
-        }
-
-        function removeFromCart(productName) {
-            cart = cart.filter(product => product.name !== productName);
-            console.log(${productName} ha sido eliminado del carrito.);
-        }
-
-        function checkout() {
-            if (cart.length === 0) {
-                console.log('El carrito está vacío.');
-            } else {
-                console.log('Compra realizada. Gracias por su compra.');
-                cart = [];
-            }
-        }
-
-        function searchProduct(query) {
-            return products.filter(product => product.name.toLowerCase().includes(query.toLowerCase()));
-        }
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Tienda de Útiles Escolares</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        main {
-            padding: 1em;
-        }
-
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
 
         form {
             display: flex;
@@ -278,200 +68,111 @@
             margin-top: 1em;
             cursor: pointer;
         }
+
+        #carrito {
+            margin-top: 2em;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Contacto</h1>
+        <h1>Tienda de Útiles Escolares</h1>
     </header>
     <main>
-        <form action="#" method="POST">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una tienda dedicada a ofrecer los mejores útiles escolares para todos los niveles educativos.</p>
+            <img src="empresa.jpg" alt="Nuestra Empresa">
+        </section>
+        <section id="features">
+            <h2>Características</h2>
+            <ul>
+                <li>Amplia variedad de productos</li>
+                <li>Precios competitivos</li>
+                <li>Atención personalizada</li>
+            </ul>
+        </section>
+        <section id="productos">
+            <h2>Productos</h2>
+            <div id="papeleria">
+                <h3>Papelería</h3>
+                <article class="producto">
+                    <img src="cuaderno.jpg" alt="Cuaderno">
+                    <h4>Cuaderno</h4>
+                    <p>Descripción del cuaderno</p>
+                    <p>Precio: $2.00</p>
+                    <button onclick="addToCart('Cuaderno', 2.00)">Comprar</button>
+                </article>
+            </div>
+            <div id="mochilas">
+                <h3>Mochilas</h3>
+                <article class="producto">
+                    <img src="mochila.jpg" alt="Mochila escolar">
+                    <h4>Mochila escolar</h4>
+                    <p>Descripción de la mochila</p>
+                    <p>Precio: $15.00</p>
+                    <button onclick="addToCart('Mochila escolar', 15.00)">Comprar</button>
+                </article>
+            </div>
+            <div id="tecnologia">
+                <h3>Tecnología</h3>
+                <article class="producto">
+                    <img src="calculadora.png" alt="Calculadora">
+                    <h4>Calculadora</h4>
+                    <p>Descripción de la calculadora</p>
+                    <p>Precio: $10.00</p>
+                    <button onclick="addToCart('Calculadora', 10.00)">Comprar</button>
+                </article>
+            </div>
+        </section>
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="itemsCarrito"></ul>
+            <p>Total: $<span id="precioTotal">0.00</span></p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>Contacto: info@tiendaescolares.com</p>
     </footer>
+    <script>
+        let carrito = [];
+        let precioTotal = 0;
+
+        function addToCart(producto, precio) {
+            carrito.push({ producto, precio });
+            precioTotal += precio;
+            actualizarCarrito();
+        }
+
+        function actualizarCarrito() {
+            const itemsCarrito = document.getElementById('itemsCarrito');
+            const precioTotalElemento = document.getElementById('precioTotal');
+            
+            itemsCarrito.innerHTML = '';
+            
+            carrito.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.producto} - $${item.precio.toFixed(2)}`;
+                itemsCarrito.appendChild(li);
+            });
+            
+            precioTotalElemento.textContent = precioTotal.toFixed(2);
+        }
+    </script>
 </body>
 </html>
-<script src="carrito.js"></script>
-narprod);
-
-   const carrito = document.getElementById('carrito');
-const productos = document.getElementById('lista-productos');
-const listaproductos = document.querySelector('#lista-carrito tbody');
-const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
-const finalizarCarritoBtn = document.querySelector('#finalizar-compra');
-const buscarProductoInput = document.getElementById('buscador');
-const listaProductos = document.querySelectorAll('.card');
-
-eventslisteners();
-
-function eventslisteners() {
-    // Atento a cuando se presiona agregar al carrito
-    productos.addEventListener('click', comprarprod);
-
-    // Eliminar producto en el carrito
-    carrito.addEventListener('click', eliminarprod);
-
-    // Vaciar carrito de compras
-    vaciarCarritoBtn.addEventListener('click', vaciarcarrito);
-
-    // Finalizar carrito de compras
-    finalizarCarritoBtn.addEventListener('click', finalizarcarrito);
-
-    // Mostrar lista de productos en carrito de compra al cargar DOM
-    document.addEventListener('DOMContentLoaded', leerLS);
-
-    // Buscar productos
-    buscarProductoInput.addEventListener('input', () => {
-        const textoBusqueda = buscarProductoInput.value.trim().toLowerCase();
-
-        listaProductos.forEach(producto => {
-            const nombreProducto = producto.querySelector('h4').textContent.toLowerCase();
-
-            if (nombreProducto.includes(textoBusqueda)) {
-                producto.style.display = 'block'; // Mostrar el producto si coincide con la búsqueda
-            } else {
-                producto.style.display = 'none'; // Ocultar el producto si no coincide con la búsqueda
-            }
-        });
-    });
-}
-
-function comprarprod(e) {
-    e.preventDefault();
-    // Delegation para agregar al carrito
-    if (e.target.classList.contains('agregar-carrito')) {
-        const prod = e.target.parentElement.parentElement;
-        // Enviamos el producto seleccionado para tomar sus datos
-        leerDatosprod(prod);
-        document.getElementById('txtgracias').style.visibility = 'hidden';
-        vaciarCarritoBtn.style.visibility = 'visible';
-        finalizarCarritoBtn.style.visibility = 'visible';
-        listaproductos.style.visibility = 'visible';
-    }
-}
-
-// Leer datos del producto
-function leerDatosprod(prod) {
-    const infoprod = {
-        imagen: prod.querySelector('img').src,
-        titulo: prod.querySelector('h4').textContent,
-        precio: prod.querySelector('.precio').textContent,
-        id: prod.querySelector('a').getAttribute('data-id')
-    }
-    insertarprod(infoprod);
-}
-
-// Insertar producto en el carrito
-function insertarprod(prod) {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-        <td><img src="${prod.imagen}" width="100"></td>
-        <td>${prod.titulo}</td>
-        <td>${prod.precio}</td>
-        <td><a href="#" class="borrar-prod" data-id="${prod.id}">X</a></td>
-    `;
-    listaproductos.appendChild(row);
-    guardarprodLocalStorage(prod);
-}
-
-// Eliminar producto del carrito en el DOM
-function eliminarprod(e) {
-    e.preventDefault();
-    let prod, prodId;
-
-    if (e.target.classList.contains('borrar-prod')) {
-        e.target.parentElement.parentElement.remove();
-    }
-    prod = e.target.parentElement.parentElement;
-    prodId = prod.querySelector('a').getAttribute('data-id');
-    eliminarprodLS(prodId);
-}
-
-// Vaciar carrito
-function vaciarcarrito() {
-    while (listaproductos.firstChild) {
-        listaproductos.removeChild(listaproductos.firstChild);
-    }
-    // Vaciar carrito de Local Storage
-    vaciarLs();
-    return false;
-}
-
-// Finalizar carrito
-function finalizarcarrito() {
-    while (listaproductos.firstChild) {
-        listaproductos.removeChild(listaproductos.firstChild);
-    }
-    // Vaciar carrito de Local Storage
-    vaciarLs();
-    document.getElementById('txtgracias').style.visibility = 'visible';
-    vaciarCarritoBtn.style.visibility = 'hidden';
-    finalizarCarritoBtn.style.visibility = 'hidden';
-    listaproductos.style.visibility = 'hidden';
-    return false;
-}
-
-// Almacenar producto en Local Storage
-function guardarprodLocalStorage(prod) {
-    let productos = obtenerproductosLocalStorage();
-    // El producto seleccionado se agrega al Array
-    productos.push(prod);
-    localStorage.setItem('productos', JSON.stringify(productos));
-}
-
-// Comprobar que haya elementos en el Local Storage
-function obtenerproductosLocalStorage() {
-    let productosLS;
-    if (localStorage.getItem('productos') === null) {
-        productosLS = [];
-    } else {
-        productosLS = JSON.parse(localStorage.getItem('productos'));
-    }
-    return productosLS;
-}
-
-// Pintar los productos desde Local Storage en el carrito
-function leerLS() {
-    let productosLS = obtenerproductosLocalStorage();
-    productosLS.forEach(prod => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-            <td><img src="${prod.imagen}" width="100"></td>
-            <td>${prod.titulo}</td>
-            <td>${prod.precio}</td>
-            <td><a href="#" class="borrar-prod" data-id="${prod.id}">X</a></td>
-        `;
-        listaproductos.appendChild(row);
-    });
-}
-
-// Eliminar producto del Local Storage
-function eliminarprodLS(prodId) {
-    let productosLS = obtenerproductosLocalStorage();
-    productosLS.forEach((prodLS, index) => {
-        if (prodLS.id === prodId) {
-            productosLS.splice(index, 1);
-        }
-    });
-    localStorage.setItem('productos', JSON.stringify(productosLS));
-}
-
-// Eliminar todos los productos del Local Storage
-function vaciarLs() {
-    localStorage.clear();             
-      
-       
-
-      
