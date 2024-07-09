@@ -129,6 +129,7 @@
             <h2>Carrito de Compras</h2>
             <ul id="itemsCarrito"></ul>
             <p>Total: $<span id="precioTotal">0.00</span></p>
+            <button onclick="comprar()">Comprar</button>
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
@@ -172,6 +173,12 @@
             });
             
             precioTotalElemento.textContent = precioTotal.toFixed(2);
+        }
+
+        function comprar() {
+            carrito = [];
+            precioTotal = 0;
+            actualizarCarrito();
         }
     </script>
 </body>
